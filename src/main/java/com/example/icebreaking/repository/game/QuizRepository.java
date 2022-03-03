@@ -1,9 +1,10 @@
 package com.example.icebreaking.repository.game;
 
-import com.example.icebreaking.domain.game.Game;
+import com.example.icebreaking.domain.game.Quiz;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GameRepository extends JpaRepository<Game, Long> {
+public interface QuizRepository extends JpaRepository<Quiz, Long> {
+
 }
