@@ -2,16 +2,26 @@ package com.example.icebreaking.service;
 
 import com.example.icebreaking.domain.game.*;
 import com.example.icebreaking.repository.game.*;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 
 @Service
 @Transactional
-public class GameService {
+public class GameService /*implements CommandLineRunner*/ {
     private final GameRepository gameRepository;
     private final BalanceGameRepository balanceGameRepository;
     private final OXQuizRepository oxQuizRepository;
@@ -51,6 +61,13 @@ public class GameService {
         return games.get(i);
     }
 
+    public BalanceGame loadBalanceGameFromID(Long id){
+        Optional<BalanceGame> balanceGame =  balanceGameRepository.findByIdEquals(id);
+
+        if(balanceGame.isPresent()) return balanceGame.get();
+        else return null;
+    }
+
     public Long addOXGame(OXQuiz oxQuiz){
         Game game = new Game("OXQuiz");
         try{
@@ -73,6 +90,13 @@ public class GameService {
         int i = random.nextInt(games.size());
 
         return games.get(i);
+    }
+
+    public OXQuiz loadOXGameFromID(Long id){
+        Optional<OXQuiz> oxQuiz =  oxQuizRepository.findByIdEquals(id);
+
+        if(oxQuiz.isPresent()) return oxQuiz.get();
+        else return null;
     }
 
     public Long addQuizGame(Quiz quiz){
@@ -99,6 +123,13 @@ public class GameService {
         return games.get(i);
     }
 
+    public Quiz loadQuizGameFromID(Long id){
+        Optional<Quiz> quiz =  quizRepository.findByIdEquals(id);
+
+        if(quiz.isPresent()) return quiz.get();
+        else return null;
+    }
+
     public Long addStartGame(StartGame startGame){
         Game game = new Game("Quiz");
         try{
@@ -121,6 +152,13 @@ public class GameService {
         int i = random.nextInt(games.size());
 
         return games.get(i);
+    }
+
+    public StartGame loadStartGameFromID(Long id){
+        Optional<StartGame> startGame =  startGameRepository.findByIdEquals(id);
+
+        if(startGame.isPresent()) return startGame.get();
+        else return null;
     }
 
 }

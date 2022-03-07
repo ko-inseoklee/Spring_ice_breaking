@@ -1,6 +1,5 @@
 package com.example.icebreaking.gameServiceTest;
 
-import com.example.icebreaking.IcebreakingApplication;
 import com.example.icebreaking.domain.game.BalanceGame;
 import com.example.icebreaking.domain.game.OXQuiz;
 import com.example.icebreaking.service.GameService;
@@ -8,10 +7,10 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
+import org.springframework.test.context.jdbc.Sql;
 
 @SpringBootTest
+@Sql({"/sql/data.sql"})
 //@Transactional
 public class GameServiceTest {
     @Autowired
@@ -38,8 +37,9 @@ public class GameServiceTest {
 
     //TODO: 나온 것 다시 안나오게 하기(유저 정보 들어온 이후에 가능할 듯?).
     @Test
+    @Sql(scripts = {"/sql/data.sql"})
     public void 랜덤밸런스게임불러오기(){
-        밸런스게임추가();
+//        밸런스게임추가();
 
         BalanceGame result = gameService.loadRandomBalanceGame();
         Assertions.assertThat(result.getId()).isEqualTo(1L);
