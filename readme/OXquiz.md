@@ -22,7 +22,9 @@ OX퀴즈를 랜덤으로 호출하는 METHOD.
     127.0.0.1/games/ox-quiz/random
 
 ## - Load OXquiz game from id
-OX퀴즈를 id로 호출하는 METHOD.
+OX퀴즈를 id로 호출하는 METHOD. </br>
+ID 범위: 101-200
+
 
     GET 
     

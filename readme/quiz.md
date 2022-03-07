@@ -22,7 +22,9 @@
     127.0.0.1/games/quiz/random
 
 ## - Load quiz game from id
-퀴즈를 id로 호출하는 METHOD.
+퀴즈를 id로 호출하는 METHOD. </br>
+ID 범위: 201-300
+
 
     GET 
     

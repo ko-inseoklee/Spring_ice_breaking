@@ -22,7 +22,8 @@
     127.0.0.1/games/start-game/random
 
 ## - Load start game from id
-초성게임을 id로 호출하는 METHOD.
+초성게임을 id로 호출하는 METHOD. </br>
+ID 범위: 301-400
 
     GET 
     
