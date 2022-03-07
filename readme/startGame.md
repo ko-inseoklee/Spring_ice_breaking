@@ -16,7 +16,7 @@
     |-----------|---------|
     | id        | int     |
     | question  | String  |
-    | answer    | String  |
+    | example   | String  |
 
     * example
     127.0.0.1/games/start-game/random
@@ -37,7 +37,7 @@
     |-----------|---------|
     | id        | int     |
     | question  | String  |
-    | answer    | String  |
+    | example   | String  |
 
     * example
     127.0.0.1/games/start-game/1

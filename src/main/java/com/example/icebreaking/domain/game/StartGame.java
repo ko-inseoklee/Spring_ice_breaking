@@ -12,7 +12,7 @@ public class StartGame {
     @Column(name = "id", nullable = false)
     private Long id;
     private String question;
-    private String answer;
+    private String example;
 
     public Long getId() {
         return id;
@@ -30,11 +30,11 @@ public class StartGame {
         this.question = question;
     }
 
-    public String getAnswer() {
-        return answer;
+    public String getExample() {
+        return example;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setExample(String example) {
+        this.example = example;
     }
 }
