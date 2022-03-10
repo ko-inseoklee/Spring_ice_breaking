@@ -19,7 +19,7 @@
     | solution2 | String  |
 
     * example
-    127.0.0.1/games/balance-game/random
+    127.0.0.1:8080/games/balance-game/random
 
 ## - Load balance game from id
 밸런스게임을 id로 호출하는 METHOD. </br>
@@ -42,4 +42,4 @@ ID 범위: 1-100
     | solution2 | String  |
 
     * example
-    127.0.0.1/games/balance-game/1
+    127.0.0.1:8080/games/balance-game/1

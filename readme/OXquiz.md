@@ -6,7 +6,7 @@ OX퀴즈를 랜덤으로 호출하는 METHOD.
     GET 
     
     * REQUEST URL
-      IP_address/games/ox-quiz/random    
+      IP_address:8080/games/ox-quiz/random    
 
     * Parameter
       None.
@@ -42,4 +42,4 @@ ID 범위: 101-200
     | answer    | bool    |
 
     * example
-    127.0.0.1/games/ox-quiz/1
+    127.0.0.1:8080/games/ox-quiz/1

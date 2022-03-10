@@ -6,7 +6,7 @@
     GET 
     
     * REQUEST URL
-      IP_address/games/start-game/random    
+      IP_address:8080/games/start-game/random    
 
     * Parameter
       None.
@@ -28,7 +28,7 @@ ID 범위: 301-400
     GET 
     
     * REQUEST URL
-      IP_address/games/start-game/id_number
+      IP_address:8080/games/start-game/id_number
 
     * Parameter
       id_number

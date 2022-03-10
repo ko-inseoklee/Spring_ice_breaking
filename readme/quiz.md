@@ -6,7 +6,7 @@
     GET 
     
     * REQUEST URL
-      IP_address/games/quiz/random    
+      IP_address:8080/games/quiz/random    
 
     * Parameter
       None.
@@ -42,4 +42,4 @@ ID 범위: 201-300
     | answer    | String  |
 
     * example
-    127.0.0.1/games/quiz/1
+    127.0.0.1:8080/games/quiz/1
