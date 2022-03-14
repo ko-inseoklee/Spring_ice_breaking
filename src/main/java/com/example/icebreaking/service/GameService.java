@@ -2,21 +2,12 @@ package com.example.icebreaking.service;
 
 import com.example.icebreaking.domain.game.*;
 import com.example.icebreaking.repository.game.*;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 
 @Service
@@ -27,14 +18,16 @@ public class GameService /*implements CommandLineRunner*/ {
     private final OXQuizRepository oxQuizRepository;
     private final QuizRepository quizRepository;
     private final StartGameRepository startGameRepository;
+    private final WithOneMouthRepository withOneMouthRepository;
 
 
-    public GameService(GameRepository gameRepository, BalanceGameRepository balanceGameRepository, OXQuizRepository oxQuizRepository, QuizRepository quizRepository, StartGameRepository startGameRepository) {
+    public GameService(GameRepository gameRepository, BalanceGameRepository balanceGameRepository, OXQuizRepository oxQuizRepository, QuizRepository quizRepository, StartGameRepository startGameRepository, WithOneMouthRepository withOneMouthRepository) {
         this.gameRepository = gameRepository;
         this.balanceGameRepository = balanceGameRepository;
         this.oxQuizRepository = oxQuizRepository;
         this.quizRepository = quizRepository;
         this.startGameRepository = startGameRepository;
+        this.withOneMouthRepository = withOneMouthRepository;
     }
 
     public Long addBalanceGame(BalanceGame balanceGame){
@@ -158,6 +151,23 @@ public class GameService /*implements CommandLineRunner*/ {
         Optional<StartGame> startGame =  startGameRepository.findByIdEquals(id);
 
         if(startGame.isPresent()) return startGame.get();
+        else return null;
+    }
+
+    public WithOneMouth loadRandomWOMGame(){
+        ArrayList<WithOneMouth> games = new ArrayList<WithOneMouth>();
+        games.addAll(withOneMouthRepository.findAll());
+
+        Random random = new Random();
+        int i = random.nextInt(games.size());
+
+        return games.get(i);
+    }
+
+    public WithOneMouth loadWOMGameFromID(Long id){
+        Optional<WithOneMouth> withOneMouth =  withOneMouthRepository.findByIdEquals(id);
+
+        if(withOneMouth.isPresent()) return withOneMouth.get();
         else return null;
     }
 

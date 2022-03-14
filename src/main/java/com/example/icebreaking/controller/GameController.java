@@ -1,9 +1,6 @@
 package com.example.icebreaking.controller;
 
-import com.example.icebreaking.domain.game.BalanceGame;
-import com.example.icebreaking.domain.game.OXQuiz;
-import com.example.icebreaking.domain.game.Quiz;
-import com.example.icebreaking.domain.game.StartGame;
+import com.example.icebreaking.domain.game.*;
 import com.example.icebreaking.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -67,5 +64,17 @@ public class GameController {
     @ResponseBody
     public Quiz callQuizGameByID(@PathVariable Long id) {
         return gameService.loadQuizGameFromID(id);
+    }
+
+    @GetMapping("games/with-one-mouth/random")
+    @ResponseBody
+    public WithOneMouth callRandomWOMGame(){
+        return gameService.loadRandomWOMGame();
+    }
+
+    @GetMapping("games/with-one-mouth/{id:[0-9]*}")
+    @ResponseBody
+    public WithOneMouth callWOMGameByID(@PathVariable Long id) {
+        return gameService.loadWOMGameFromID(id);
     }
 }

@@ -8,3 +8,5 @@ drop table if exists OX_quiz cascade
 create table OX_quiz(id int PRIMARY KEY NOT NULL,question varchar(100),answer boolean)
 drop table if exists start_game cascade
 create table start_game(id int PRIMARY KEY NOT NULL,question varchar(10),example varchar(100))
+drop table if exists with_one_mouth cascade
+create table with_one_mouth(id int PRIMARY KEY NOT NULL,woreds varchar(20))
