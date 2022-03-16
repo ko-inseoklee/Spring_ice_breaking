@@ -11,5 +11,4 @@ public class IcebreakingApplication {
 
 		System.out.println("Success for opening server.");
 	}
-
 }
