@@ -167,24 +167,24 @@ INSERT INTO start_game(id,question,example) VALUES (319, 'ㅂㅁ','보물, 비�
 INSERT INTO start_game(id,question,example) VALUES (320, 'ㅅㄹ','사랑, 실리, 서랍, 선로, 선례, 신랑');
 
 
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (401,"피자","치킨");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (402,"짜장","짬뽕");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (403,"민초단","반민초단");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (404,"후라이드","양념");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (405,"물만두","군만두");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (406,"콜라","사이다");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (407,"산","바다");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (408,"소고기","돼지고기");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (409,"갤럭시","아이폰");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (410,"부먹","찍먹");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (411,"우동","냉모밀");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (412,"물냉","비냉");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (413,"삼성","LG");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (414,"순살치킨","뼈치킨");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (415,"참치김치찌개","돼지김치찌개");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (416,"팥붕어빵","슈크림붕어빵");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (417,"간장게장","양념게장");
-INSERT INTO with_one_mouth(id,words1,words2) VALUES (418,"강아지","고양이");
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (401,'피자','치킨');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (402,'짜장','짬뽕');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (403,'민초단','반민초단');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (404,'후라이드','양념');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (405,'물만두','군만두');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (406,'콜라','사이다');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (407,'산','바다');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (408,'소고기','돼지고기');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (409,'갤럭시','아이폰');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (410,'부먹','찍먹');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (411,'우동','냉모밀');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (412,'물냉','비냉');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (413,'삼성','LG');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (414,'순살치킨','뼈치킨');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (415,'참치김치찌개','돼지김치찌개');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (416,'팥붕어빵','슈크림붕어빵');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (417,'간장게장','양념게장');
+INSERT INTO with_one_mouth(id,words1,words2) VALUES (418,'강아지','고양이');
 
 
 
