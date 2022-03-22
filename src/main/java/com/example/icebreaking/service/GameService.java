@@ -30,20 +30,6 @@ public class GameService /*implements CommandLineRunner*/ {
         this.withOneMouthRepository = withOneMouthRepository;
     }
 
-    public Long addBalanceGame(BalanceGame balanceGame){
-        Game game = new Game("balance");
-        try{
-            Long gID = gameRepository.save(game).getId();
-            balanceGame.setId(gID);
-
-            return balanceGameRepository.save(balanceGame).getId();
-
-        } catch(Exception e){
-            e.printStackTrace();
-            return -1L;
-        }
-    }
-
     public BalanceGame loadRandomBalanceGame(){
         ArrayList<BalanceGame> games = new ArrayList<BalanceGame>();
         games.addAll(balanceGameRepository.findAll());
@@ -59,20 +45,6 @@ public class GameService /*implements CommandLineRunner*/ {
 
         if(balanceGame.isPresent()) return balanceGame.get();
         else return null;
-    }
-
-    public Long addOXGame(OXQuiz oxQuiz){
-        Game game = new Game("OXQuiz");
-        try{
-            Long gID = gameRepository.save(game).getId();
-            oxQuiz.setId(gID);
-
-            return oxQuizRepository.save(oxQuiz).getId();
-
-        } catch(Exception e){
-            e.printStackTrace();
-            return -1L;
-        }
     }
 
     public OXQuiz loadRandomOXGame(){
@@ -92,20 +64,6 @@ public class GameService /*implements CommandLineRunner*/ {
         else return null;
     }
 
-    public Long addQuizGame(Quiz quiz){
-        Game game = new Game("Quiz");
-        try{
-            Long gID = gameRepository.save(game).getId();
-            quiz.setId(gID);
-
-            return quizRepository.save(quiz).getId();
-
-        } catch(Exception e){
-            e.printStackTrace();
-            return -1L;
-        }
-    }
-
     public Quiz loadRandomQuizGame(){
         ArrayList<Quiz> games = new ArrayList<>();
         games.addAll(quizRepository.findAll());
@@ -123,20 +81,6 @@ public class GameService /*implements CommandLineRunner*/ {
         else return null;
     }
 
-    public Long addStartGame(StartGame startGame){
-        Game game = new Game("Quiz");
-        try{
-            Long gID = gameRepository.save(game).getId();
-            startGame.setId(gID);
-
-            return startGameRepository.save(startGame).getId();
-
-        } catch(Exception e){
-            e.printStackTrace();
-            return -1L;
-        }
-    }
-
     public StartGame loadRandomStartGame(){
         ArrayList<StartGame> games = new ArrayList<>();
         games.addAll(startGameRepository.findAll());
@@ -145,13 +89,6 @@ public class GameService /*implements CommandLineRunner*/ {
         int i = random.nextInt(games.size());
 
         return games.get(i);
-    }
-
-    public StartGame loadStartGameFromID(Long id){
-        Optional<StartGame> startGame =  startGameRepository.findByIdEquals(id);
-
-        if(startGame.isPresent()) return startGame.get();
-        else return null;
     }
 
     public WithOneMouth loadRandomWOMGame(){
