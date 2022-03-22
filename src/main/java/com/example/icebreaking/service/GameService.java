@@ -107,7 +107,7 @@ public class GameService /*implements CommandLineRunner*/ {
     }
 
     public Quiz loadRandomQuizGame(){
-        ArrayList<Quiz> games = new ArrayList<Quiz>();
+        ArrayList<Quiz> games = new ArrayList<>();
         games.addAll(quizRepository.findAll());
 
         Random random = new Random();
@@ -138,7 +138,7 @@ public class GameService /*implements CommandLineRunner*/ {
     }
 
     public StartGame loadRandomStartGame(){
-        ArrayList<StartGame> games = new ArrayList<StartGame>();
+        ArrayList<StartGame> games = new ArrayList<>();
         games.addAll(startGameRepository.findAll());
 
         Random random = new Random();
@@ -155,7 +155,7 @@ public class GameService /*implements CommandLineRunner*/ {
     }
 
     public WithOneMouth loadRandomWOMGame(){
-        ArrayList<WithOneMouth> games = new ArrayList<WithOneMouth>();
+        ArrayList<WithOneMouth> games = new ArrayList<>();
         games.addAll(withOneMouthRepository.findAll());
 
         Random random = new Random();
