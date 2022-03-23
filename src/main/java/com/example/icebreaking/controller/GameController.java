@@ -51,7 +51,7 @@ public class GameController {
     @GetMapping("games/start-game/{id:[0-9]*}")
     @ResponseBody
     public StartGame callStartGameByID(@PathVariable Long id) {
-        return gameService.loadRandomStartGame();
+        return gameService.loadStartGameFromID(id);
     }
 
     @GetMapping("games/quiz/random")

@@ -91,6 +91,13 @@ public class GameService /*implements CommandLineRunner*/ {
         return games.get(i);
     }
 
+    public StartGame loadStartGameFromID(Long id){
+        Optional<StartGame> startGame =  startGameRepository.findByIdEquals(id);
+
+        if(startGame.isPresent()) return startGame.get();
+        else return null;
+    }
+
     public WithOneMouth loadRandomWOMGame(){
         ArrayList<WithOneMouth> games = new ArrayList<>();
         games.addAll(withOneMouthRepository.findAll());
