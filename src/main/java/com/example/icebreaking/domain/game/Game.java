@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "game")
 @NoArgsConstructor
-@Getter @Setter
 public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,5 +24,21 @@ public class Game {
 
     public Game(String c){
         this.category = c;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

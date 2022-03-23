@@ -10,11 +10,34 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "ox_quiz")
-@Getter @Setter
 public class OXQuiz {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
     private String question;
     private boolean answer;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public boolean isAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(boolean answer) {
+        this.answer = answer;
+    }
 }
