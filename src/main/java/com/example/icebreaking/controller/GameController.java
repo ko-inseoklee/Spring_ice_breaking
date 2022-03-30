@@ -1,14 +1,16 @@
 package com.example.icebreaking.controller;
 
+import com.example.icebreaking.ResponseMessage;
+import com.example.icebreaking.StatusCode;
 import com.example.icebreaking.domain.game.*;
 import com.example.icebreaking.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
+@RequestMapping("games")
 public class GameController {
     @Autowired
     private final GameService gameService;
@@ -18,63 +20,83 @@ public class GameController {
     }
 
     //TODO: 했던 게임 정보를 저장할 필요가 있을 경우에 대한 컨트롤러가 필요함.
-    @GetMapping("games/balance-game/random")
+    @GetMapping("balance-game/random")
     @ResponseBody
-    public BalanceGame callRandomBalanceGame(){
-        return gameService.loadRandomBalanceGame();
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<BalanceGame> callRandomBalanceGame(){
+        BalanceGame balanceGame = gameService.loadRandomBalanceGame();
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,balanceGame);
     }
 
     @GetMapping("games/balance-game/{id:[0-9]*}")
     @ResponseBody
-    public BalanceGame callBalanceGameByID(@PathVariable Long id) {
-        return gameService.loadBalanceGameFromID(id);
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<BalanceGame> callBalanceGameByID(@PathVariable Long id) {
+        BalanceGame balanceGame = gameService.loadBalanceGameFromID(id);
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,balanceGame);
     }
 
     @GetMapping("games/ox-quiz/random")
     @ResponseBody
-    public OXQuiz callRandomOXGame(){
-        return gameService.loadRandomOXGame();
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<OXQuiz> callRandomOXGame(){
+        OXQuiz quiz = gameService.loadRandomOXGame();
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
     @GetMapping("games/ox-quiz/{id:[0-9]*}")
     @ResponseBody
-    public OXQuiz callOXGameByID(@PathVariable Long id) {
-        return gameService.loadOXGameFromID(id);
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<OXQuiz> callOXGameByID(@PathVariable Long id) {
+        OXQuiz quiz = gameService.loadOXGameFromID(id);
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
     @GetMapping("games/start-game/random")
     @ResponseBody
-    public StartGame callRandomStartGame(){
-        return gameService.loadRandomStartGame();
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<StartGame> callRandomStartGame(){
+        StartGame startGame = gameService.loadRandomStartGame();
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,startGame);
     }
 
     @GetMapping("games/start-game/{id:[0-9]*}")
     @ResponseBody
-    public StartGame callStartGameByID(@PathVariable Long id) {
-        return gameService.loadStartGameFromID(id);
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<StartGame> callStartGameByID(@PathVariable Long id) {
+        StartGame startGame = gameService.loadStartGameFromID(id);
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,startGame);
     }
 
     @GetMapping("games/quiz/random")
     @ResponseBody
-    public Quiz callRandomQuizGame(){
-        return gameService.loadRandomQuizGame();
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<Quiz> callRandomQuizGame(){
+        Quiz quiz = gameService.loadRandomQuizGame();
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
     @GetMapping("games/quiz/{id:[0-9]*}")
     @ResponseBody
-    public Quiz callQuizGameByID(@PathVariable Long id) {
-        return gameService.loadQuizGameFromID(id);
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<Quiz> callQuizGameByID(@PathVariable Long id) {
+        Quiz quiz = gameService.loadQuizGameFromID(id);
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
     @GetMapping("games/with-one-mouth/random")
     @ResponseBody
-    public WithOneMouth callRandomWOMGame(){
-        return gameService.loadRandomWOMGame();
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<WithOneMouth> callRandomWOMGame(){
+        WithOneMouth withOneMouth = gameService.loadRandomWOMGame();
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,withOneMouth);
     }
 
     @GetMapping("games/with-one-mouth/{id:[0-9]*}")
     @ResponseBody
-    public WithOneMouth callWOMGameByID(@PathVariable Long id) {
-        return gameService.loadWOMGameFromID(id);
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<WithOneMouth> callWOMGameByID(@PathVariable Long id) {
+        WithOneMouth withOneMouth = gameService.loadWOMGameFromID(id);
+        return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,withOneMouth);
     }
 }

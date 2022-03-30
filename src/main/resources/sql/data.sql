@@ -34,7 +34,7 @@ INSERT INTO balance_game(id,solution1,solution2) VALUES (13, '언제 죽을지 �
 INSERT INTO balance_game(id,solution1,solution2) VALUES (14, '하루 종일 입 다물고 있기', '하루 종일 말하고 다니기');
 INSERT INTO balance_game(id,solution1,solution2) VALUES (15, '300억 받고 모든 인간관계 정리하기', '그냥 살기');
 INSERT INTO balance_game(id,solution1,solution2) VALUES (16, '평생 고기 끊기', '평생 밀가루 끊기');
-INSERT INTO balance_game(id,solution1,solution2) VALUES (17, '자도 자도 피곤히기', '먹어도 먹어도 배고프기');
+INSERT INTO balance_game(id,solution1,solution2) VALUES (17, '자도 자도 피곤하기', '먹어도 먹어도 배고프기');
 INSERT INTO balance_game(id,solution1,solution2) VALUES (18, '마마보이/마마걸이랑 결혼하기', '바람둥이랑 결혼하기');
 INSERT INTO balance_game(id,solution1,solution2) VALUES (19, '이국종 교수한테 맞고 추성훈한테 수술 받기', '추성훈한테 맞고 이국종 교수한테 수술 받기');
 
@@ -185,6 +185,34 @@ INSERT INTO with_one_mouth(id,words1,words2) VALUES (415,'참치김치찌개','�
 INSERT INTO with_one_mouth(id,words1,words2) VALUES (416,'팥붕어빵','슈크림붕어빵');
 INSERT INTO with_one_mouth(id,words1,words2) VALUES (417,'간장게장','양념게장');
 INSERT INTO with_one_mouth(id,words1,words2) VALUES (418,'강아지','고양이');
+
+INSERT INTO communication(id, category, question) VALUES (1,'나','당신이 가장 좋아하는 음악은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (2,'나','당신은 다른사람에게 어떤 사람인 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (3,'나','당신은 다른사람에게 어떤 사람인 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (4,'나','당신이 가장 사랑하는 사람은 누구인가요?');
+
+INSERT INTO communication(id, category, question) VALUES (101,'가치','일과 사랑 중에 골라야한다면 당신은 어떤 것을 고를 건가요?');
+INSERT INTO communication(id, category, question) VALUES (102,'가치','돈과 명예 중에 당신이 중시하는 건 무엇인가요?');
+
+INSERT INTO communication(id, category, question) VALUES (201,'가족','당신은 가족에서 어떤 역할을 담당하고 있나요?');
+INSERT INTO communication(id, category, question) VALUES (202,'가족','당신이 가족에게 바라는 점이 있다면 무엇인가요?');
+
+INSERT INTO communication(id, category, question) VALUES (301,'상상','당신이 대통령이라면, 가장 먼저 하고 싶은 것이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (302,'상상','당신이 해본 상상 중 가장 창의적인 것은 무엇인가요?');
+
+INSERT INTO communication(id, category, question) VALUES (401,'일상','당신은 평소 무엇을 하며 휴식을 취하나요?');
+INSERT INTO communication(id, category, question) VALUES (402,'일상','당신은 어떤 상황에서 제일 분노를 느끼나요?');
+INSERT INTO communication(id, category, question) VALUES (403,'일상','당신은 주로 어떤 것을 할 때 기분이 좋나요?');
+
+INSERT INTO communication(id, category, question) VALUES (501,'과거','당신은 학창시절 어떤 학생이었나요?');
+INSERT INTO communication(id, category, question) VALUES (502,'과거','당신의 어린시절 꿈은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (503,'과거','어린 시절 가장 자랑스러웠던 순간을 꼽자면?');
+
+INSERT INTO communication(id, category, question) VALUES (601,'미래','당신이 미래에 가장 하고 싶은 것은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (602,'미래','당신은 미래에 어떤 삶을 살고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (603,'미래','당신은 주변인에게 어떤 사람으로 보이고 싶나요?');
+
+
 
 
 
