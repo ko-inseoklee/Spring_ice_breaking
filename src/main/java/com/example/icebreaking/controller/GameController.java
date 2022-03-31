@@ -28,7 +28,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,balanceGame);
     }
 
-    @GetMapping("games/balance-game/{id:[0-9]*}")
+    @GetMapping("balance-game/{id:[0-9]*}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<BalanceGame> callBalanceGameByID(@PathVariable Long id) {
@@ -36,7 +36,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,balanceGame);
     }
 
-    @GetMapping("games/ox-quiz/random")
+    @GetMapping("ox-quiz/random")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<OXQuiz> callRandomOXGame(){
@@ -44,7 +44,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
-    @GetMapping("games/ox-quiz/{id:[0-9]*}")
+    @GetMapping("ox-quiz/{id:[0-9]*}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<OXQuiz> callOXGameByID(@PathVariable Long id) {
@@ -52,7 +52,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
-    @GetMapping("games/start-game/random")
+    @GetMapping("start-game/random")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<StartGame> callRandomStartGame(){
@@ -60,7 +60,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,startGame);
     }
 
-    @GetMapping("games/start-game/{id:[0-9]*}")
+    @GetMapping("start-game/{id:[0-9]*}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<StartGame> callStartGameByID(@PathVariable Long id) {
@@ -68,7 +68,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,startGame);
     }
 
-    @GetMapping("games/quiz/random")
+    @GetMapping("quiz/random")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<Quiz> callRandomQuizGame(){
@@ -76,7 +76,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
-    @GetMapping("games/quiz/{id:[0-9]*}")
+    @GetMapping("quiz/{id:[0-9]*}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<Quiz> callQuizGameByID(@PathVariable Long id) {
@@ -84,7 +84,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,quiz);
     }
 
-    @GetMapping("games/with-one-mouth/random")
+    @GetMapping("with-one-mouth/random")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<WithOneMouth> callRandomWOMGame(){
@@ -92,7 +92,7 @@ public class GameController {
         return new CustomizedResponseEntity(StatusCode.OK, ResponseMessage.GAME_LOAD_SUCCESS,withOneMouth);
     }
 
-    @GetMapping("games/with-one-mouth/{id:[0-9]*}")
+    @GetMapping("with-one-mouth/{id:[0-9]*}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<WithOneMouth> callWOMGameByID(@PathVariable Long id) {
