@@ -212,7 +212,9 @@ INSERT INTO communication(id, category, question) VALUES (601,'미래','당신�
 INSERT INTO communication(id, category, question) VALUES (602,'미래','당신은 미래에 어떤 삶을 살고 싶나요?');
 INSERT INTO communication(id, category, question) VALUES (603,'미래','당신은 주변인에게 어떤 사람으로 보이고 싶나요?');
 
-
+INSERT INTO communication(id, category, question) VALUES (701,'관계','당신은 다른 사람에게 어떤 사람이고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (702,'관계','당신이 소중하게 여기는 관계는 어떤 관계인가요?');
+INSERT INTO communication(id, category, question) VALUES (703,'관계','당신이 관계를 맺기 위해 하는 노력이 있나요?');
 
 
 
