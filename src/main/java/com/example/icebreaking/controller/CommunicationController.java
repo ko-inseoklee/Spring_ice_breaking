@@ -21,7 +21,7 @@ public class CommunicationController {
         this.communicationService = communicationService;
     }
 
-    @GetMapping("{id}")
+    @GetMapping("get/{id}")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
     public CustomizedResponseEntity<Communication> callCommunication(@PathVariable Long id){

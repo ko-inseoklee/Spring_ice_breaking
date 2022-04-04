@@ -27,7 +27,7 @@ id를 기반으로 대화 주제를 불러오는 API.
     GET 
     
     * REQUEST URL
-      IP_address/communication/id
+      IP_address/communication/get/id
 
     * Parameter
     id
@@ -40,7 +40,7 @@ id를 기반으로 대화 주제를 불러오는 API.
     | data      | Communication  | instance            |
 
     * example
-    127.0.0.1:8080/communication/1
+    127.0.0.1:8080/communication/get/1
 
 ### Load communications by category
 카테고리에 맞는 대화 주제 리스트를 불러오기.
