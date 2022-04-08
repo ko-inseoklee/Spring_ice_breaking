@@ -17,4 +17,8 @@ public class ResponseMessage {
     // 대화 관련 응답 메세지
     public static final String COMMUNICATION_LOAD_SUCCESS = "대화 불러오기 성공";
     public static final String COMMUNICATION_LOAD_FAIL = "대화 불러오기 실패";
+
+    // 전화번호 인증 응답 메세지
+    public static final String MORE_THAN_TEN_TIMES_REQUEST = "일일 전송 횟수를 초과했습니다.";
+    public static final String CONFIRM_CREATE_SUCCESS = "전화번호 인증 요청 성공";
 }

@@ -45,7 +45,6 @@ id를 기반으로 대화 주제를 불러오는 API.
 ### Load communications by category
 카테고리에 맞는 대화 주제 리스트를 불러오기.
 
-
     GET 
     
     * REQUEST URL
@@ -63,3 +62,24 @@ id를 기반으로 대화 주제를 불러오는 API.
 
     * example
     127.0.0.1:8080/communication/나
+
+### Load random communication by category
+카테고리에 맞는 대화 주제 중 하나를 무작위로 불러오기.
+
+    GET 
+    
+    * REQUEST URL
+      IP_address/communication/category/random
+
+    * Parameter
+      category
+
+    * Result
+    | parameter | type           |     description     |
+    |-----------|----------------|---------------------|
+    | status    | int            | HTTP code           |
+    | message   | String         | response message    |
+    | data      | Communication  | instance            |
+
+    * example
+    127.0.0.1:8080/communication/나/random

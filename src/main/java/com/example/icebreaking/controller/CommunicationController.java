@@ -37,4 +37,12 @@ public class CommunicationController {
         List<Communication> communications = communicationService.loadCommunicationsFromCategory(category);
         return new CustomizedResponseEntity<List<Communication>>(StatusCode.OK, ResponseMessage.COMMUNICATION_LOAD_SUCCESS,communications);
     }
+
+    @GetMapping("{category}/random")
+    @ResponseBody
+    @ResponseStatus(HttpStatus.OK)
+    public CustomizedResponseEntity<Communication> callRandomCommunicationByCategory(@PathVariable String category){
+        Communication communication = communicationService.loadRandomCommunicationFromCategory(category);
+        return new CustomizedResponseEntity<Communication>(StatusCode.OK,ResponseMessage.COMMUNICATION_LOAD_SUCCESS,communication);
+    }
 }
