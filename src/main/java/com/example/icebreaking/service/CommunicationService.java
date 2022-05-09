@@ -28,9 +28,8 @@ public class CommunicationService {
         ArrayList<Integer> categoryLength = new ArrayList<Integer>(Arrays.asList(4, 2, 2, 2, 3, 3, 3, 3));
         ArrayList<String> categories = new ArrayList<String>(Arrays.asList("나","가치","가족","상상","일상","과거","미래","관계"));
 
-        int random = (int)(new Random().nextInt(9000)) + 1000;
         int idx = categories.indexOf(category);
-        int id = idx * 100 + (int)(new Random().nextInt(categoryLength.get(idx)) - 1) + 1;
+        int id = idx * 100 + (int)(new Random().nextInt(categoryLength.get(idx))) + 1;
 
         return loadCommunicationFromID(new Long(id));
     }

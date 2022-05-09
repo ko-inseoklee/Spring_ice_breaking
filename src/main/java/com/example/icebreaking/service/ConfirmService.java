@@ -1,7 +1,6 @@
 package com.example.icebreaking.service;
 
 
-import com.example.icebreaking.CoolMessage;
 import com.example.icebreaking.HayUtility;
 import com.example.icebreaking.ResponseMessage;
 import com.example.icebreaking.controller.CustomizedResponseEntity;
@@ -39,11 +38,14 @@ public class ConfirmService {
             }
 
         } else return new CustomizedResponseEntity<>(400, ResponseMessage.MORE_THAN_TEN_TIMES_REQUEST,confirm);
-
-
-
-
-
         return new CustomizedResponseEntity<>(201, ResponseMessage.CONFIRM_CREATE_SUCCESS,confirm);
+    }
+
+    public boolean validate(String phoneNumber, String code){
+        Confirm confirm = confirmRepository.findByPhoneNumberEquals(phoneNumber);
+
+        if(confirm == null) return false;
+
+        return confirm.getValidationNumber().equals(code);
     }
 }
