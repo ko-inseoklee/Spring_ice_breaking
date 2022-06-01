@@ -33,7 +33,9 @@ public class UserService {
     public boolean signIn(String id,String password){
         Optional<User> user = userRepository.findByEmailEquals(id);
 
-        if(user.isPresent()) return encoder.matches(password,user.get().getPassword());
+        if(user.isPresent()) {
+            return (encoder.matches(password,user.get().getPassword()));
+        }
         return false;
     }
 

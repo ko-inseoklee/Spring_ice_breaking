@@ -1,6 +1,5 @@
 package com.example.icebreaking.service;
 
-
 import com.example.icebreaking.HayUtility;
 import com.example.icebreaking.ResponseMessage;
 import com.example.icebreaking.controller.CustomizedResponseEntity;
@@ -19,20 +18,34 @@ public class ConfirmService {
         this.confirmRepository = confirmRepository;
     }
 
+    public Confirm getConfirm(String phoneNumber) {
+        return confirmRepository.findByPhoneNumberEquals(phoneNumber);
+    }
+
     public CustomizedResponseEntity<Confirm> sendMessage(String phoneNumber) throws CoolsmsException {
-        String code = HayUtility.generateIdentifyNumber();
+
+        String code;
+
         Confirm confirm = confirmRepository.findByPhoneNumberEquals(phoneNumber);
 
         //First Time
         if(confirm == null || confirm.getRequestTime() <= 10){
-
             try{
-                coolMessage.sendSMS(phoneNumber,code);
                 if(confirm == null) {
-                    confirm = new Confirm(HayUtility.getCurrentTime(), code, phoneNumber);
-                    confirmRepository.save(confirm);
+                    code = HayUtility.generateIdentifyNumber();
+                    coolMessage.sendSMS(phoneNumber,code);
+
+                    Confirm newConfirm = new Confirm();
+
+                    newConfirm.setCreationTime(HayUtility.getCurrentTime());
+                    newConfirm.setValidationNumber(code);
+                    newConfirm.setPhoneNumber(phoneNumber);
+                    confirmRepository.save(newConfirm);
                 }
-                else confirmRepository.updateValidation(HayUtility.generateIdentifyNumber(), confirm.getRequestTime() + 1, HayUtility.getCurrentTime(), phoneNumber);
+                else {
+                    code = HayUtility.generateIdentifyNumber();
+                    confirmRepository.updateValidation(code, confirm.getRequestTime() + 1, HayUtility.getCurrentTime(), phoneNumber);
+                }
             } catch (Exception e){
                 System.out.println(e.getMessage());
             }
@@ -45,6 +58,7 @@ public class ConfirmService {
         Confirm confirm = confirmRepository.findByPhoneNumberEquals(phoneNumber);
 
         if(confirm == null) return false;
+
 
         return confirm.getValidationNumber().equals(code);
     }

@@ -190,31 +190,124 @@ INSERT INTO communication(id, category, question) VALUES (1,'나','당신이 가
 INSERT INTO communication(id, category, question) VALUES (2,'나','당신은 다른사람에게 어떤 사람인 것 같나요?');
 INSERT INTO communication(id, category, question) VALUES (3,'나','당신은 다른사람에게 어떤 사람인 것 같나요?');
 INSERT INTO communication(id, category, question) VALUES (4,'나','당신이 가장 사랑하는 사람은 누구인가요?');
+INSERT INTO communication(id, category, question) VALUES (5,'나','당신이 해본 가장 큰 일탈은?');
+INSERT INTO communication(id, category, question) VALUES (6,'나','스스로 생각하는 본인의 콤플렉스는?');
+INSERT INTO communication(id, category, question) VALUES (7,'나','가장 자신 있는 신체부위는?');
+INSERT INTO communication(id, category, question) VALUES (8,'나','좋아하는 영화 장르는?');
+INSERT INTO communication(id, category, question) VALUES (9,'나','가장 좋아하는 계절과 그 이유는?');
+INSERT INTO communication(id, category, question) VALUES (10,'나','좋아하는 연예인이 있나요? 있다면 누구인가요?');
+INSERT INTO communication(id, category, question) VALUES (11,'나','살면서 꼭 해보고 싶은 일이 있다면 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (12,'나','인생에서 가장 행복했던 순간이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (13,'나','당신의 가장 친한 사람을 소개해주세요!');
+INSERT INTO communication(id, category, question) VALUES (14,'나','당신의 이상형은?');
+INSERT INTO communication(id, category, question) VALUES (15,'나','가장 인상깊게 읽은 책은?');
+INSERT INTO communication(id, category, question) VALUES (16,'나','스스로에 대해 30초 이내로 소개해주세요!');
+INSERT INTO communication(id, category, question) VALUES (17,'나','학창시절 별명이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (18,'나','주로 보는 유튜브 채널이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (19,'나','키우는 혹은 키우고 싶은 애완동물이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (20,'나','남이 보는 당신의 첫인상은 주로 어떤가요?');
 
 INSERT INTO communication(id, category, question) VALUES (101,'가치','일과 사랑 중에 골라야한다면 당신은 어떤 것을 고를 건가요?');
 INSERT INTO communication(id, category, question) VALUES (102,'가치','돈과 명예 중에 당신이 중시하는 건 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (103,'가치','살면서 했던 일 중에 가장 가치 있었던 일을 꼽는다면?');
+INSERT INTO communication(id, category, question) VALUES (104,'가치','당신이 한 소비 중에 가장 가치 있는 소비가 있다면?');
+INSERT INTO communication(id, category, question) VALUES (105,'가치','재능기부에 대한 당신의 생각은 어떤가요?');
+INSERT INTO communication(id, category, question) VALUES (106,'가치','당신은 남녀사이에 친구가 가능하다고 생각하나요?');
+INSERT INTO communication(id, category, question) VALUES (107,'가치','여행할 때, 당신은 맛집과 볼 거리 중 어느 것을 더 중요하게 여기나요?');
+INSERT INTO communication(id, category, question) VALUES (108,'가치','오늘이 인생의 마지막 날이라면, 어떤 하루를 보낼 것인가요?');
+INSERT INTO communication(id, category, question) VALUES (109,'가치','당신의 행복을 위해 꼭 필요한 것이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (110,'가치','오늘 쓰는 모든 돈이 공짜라면 무엇을 할 건가요? (부동산, 금융 상품 금지)');
+INSERT INTO communication(id, category, question) VALUES (111,'가치','가장 좋아하는 말귀나 노래 가사가 있나요?');
+INSERT INTO communication(id, category, question) VALUES (112,'가치','당신의 묘비명을 남길 수 있다면, 어떤 말을 남기고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (113,'가치','사람을 만날 때 가장 중요하게 여기는 가치는?');
 
 INSERT INTO communication(id, category, question) VALUES (201,'가족','당신은 가족에서 어떤 역할을 담당하고 있나요?');
 INSERT INTO communication(id, category, question) VALUES (202,'가족','당신이 가족에게 바라는 점이 있다면 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (203,'가족','당신이 가족을 만든다면, 어떤 가정을 꾸리고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (204,'가족','가족의 말 중에 가장 상처가 됐던 말이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (205,'가족','당신 가족의 장점을 꼽자면?');
+INSERT INTO communication(id, category, question) VALUES (206,'가족','가족에게 감사했던 순간은?');
+INSERT INTO communication(id, category, question) VALUES (207,'가족','가족 구성원에 대해 간단히 소개해주세요!');
+INSERT INTO communication(id, category, question) VALUES (208,'가족','당신에게 가족은 어떤 존재인가요?');
+INSERT INTO communication(id, category, question) VALUES (209,'가족','가족에게 아쉬운 점이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (210,'가족','가족에 대한 현재 당신의 마음은 어떤가요?');
+INSERT INTO communication(id, category, question) VALUES (211,'가족','가족 구성원의 역할을 선택할 수 있다면, 어떤 역할을 맡고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (212,'가족','당신의 가족과 다른 사람들의 가족과 차이점이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (213,'가족','당신이 가장 잘하는 집안일은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (214,'가족','당신은 가족들과 주로 어떤 시간을 보내나요?');
+INSERT INTO communication(id, category, question) VALUES (215,'가족','가족들에게 충분한 돈과 시간이 주어진다면 무엇을 하고 싶나요?');
 
 INSERT INTO communication(id, category, question) VALUES (301,'상상','당신이 대통령이라면, 가장 먼저 하고 싶은 것이 있나요?');
 INSERT INTO communication(id, category, question) VALUES (302,'상상','당신이 해본 상상 중 가장 창의적인 것은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (303,'상상','당신이 로또 1등 당첨자라면, 상금을 어떻게 사용할 것인가요?');
+INSERT INTO communication(id, category, question) VALUES (304,'상상','당신이 다시 태어날 수 있다면, 어떤 사람으로 태어나고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (305,'상상','게임/만화 속 캐릭터가 될 수 있다면, 가장 탐나는 캐릭터는?');
+INSERT INTO communication(id, category, question) VALUES (306,'상상','요술 램프가 당신의 것이라면, 당신의 소원 3가지는?');
+INSERT INTO communication(id, category, question) VALUES (307,'상상','무인도에 3가지만 가지고 갈 수 있다면?');
+INSERT INTO communication(id, category, question) VALUES (308,'상상','하루만 원하는 몸으로 바꿀 수 있다면, 누구와 바꾸고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (309,'상상','어떤 직업을 선택하든 우수한 실무 능력을 갖출 수 있다면, 당신은 어떤 직업을 갖고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (310,'상상','당신에게 어디든 갈 수 있는 문이 있다면, 어디로 가고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (311,'상상','당신에게 초능력이 있다면, 어떤 능력을 가지고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (312,'상상','당신이 사물이 된다면, 어떤 사물이 되고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (313,'상상','당신이 국적을 정해서 태어날 수 있다면, 어느 나라에서 태어나고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (314,'상상','딱 한 번 시간을 되돌아 갈 수 있는 버튼을 누를 수 있다면, 언제로 돌아가고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (315,'상상','재능을 한 가지 얻을 수 있다면, 어떤 재능이 갖고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (316,'상상','멧돼지나 곰을 만나면 당신은 어떻게 할 것인가요?');
+INSERT INTO communication(id, category, question) VALUES (317,'상상','유튜버가 된다면 어떤 콘텐츠를 운영하고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (318,'상상','당신에게 강연을 위한 15분의 시간이 주어지고 모든 관객이 경청하는 상황이라면, 어떤 강연을 하고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (319,'상상','내가 이름을 다시 정할 수 있다면, 어떤 이름으로 살고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (320,'상상','지금 타임캡슐을 묻는다면, 어떤 것을 넣고 싶나요?');
 
 INSERT INTO communication(id, category, question) VALUES (401,'일상','당신은 평소 무엇을 하며 휴식을 취하나요?');
 INSERT INTO communication(id, category, question) VALUES (402,'일상','당신은 어떤 상황에서 제일 분노를 느끼나요?');
 INSERT INTO communication(id, category, question) VALUES (403,'일상','당신은 주로 어떤 것을 할 때 기분이 좋나요?');
+INSERT INTO communication(id, category, question) VALUES (404,'일상','당신이 평소 즐겨먹는 음식은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (405,'일상','핸드폰에서 가장 많이 사용하는 앱은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (406,'일상','주로 많이 하는 지출은 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (407,'일상','당신은 현재의 스스로에게 만족하나요?');
+INSERT INTO communication(id, category, question) VALUES (408,'일상','실내에서 쉬는 것이 힐링인가요? 야외에서 활동하는 것이 힐링인가요?');
+INSERT INTO communication(id, category, question) VALUES (409,'일상','오늘 일기를 쓴다면, 어떤 말을 적을 것인가요?');
+INSERT INTO communication(id, category, question) VALUES (410,'일상','더 나은 내가 되기 위해서 어떤 노력을 하고 있나요?');
 
 INSERT INTO communication(id, category, question) VALUES (501,'과거','당신은 학창시절 어떤 학생이었나요?');
 INSERT INTO communication(id, category, question) VALUES (502,'과거','당신의 어린시절 꿈은 무엇인가요?');
-INSERT INTO communication(id, category, question) VALUES (503,'과거','어린 시절 가장 자랑스러웠던 순간을 꼽자면?');
+INSERT INTO communication(id, category, question) VALUES (503,'과거','당신이 후회하는 순간을 꼽자면?');
+INSERT INTO communication(id, category, question) VALUES (504,'과거','살면서 들은 가장 좋은 말은?');
+INSERT INTO communication(id, category, question) VALUES (505,'과거','어린시절 가장 인상깊게 본 만화는?');
+INSERT INTO communication(id, category, question) VALUES (506,'과거','지금까지 살아오면서 전성기가 있었다면 언제 인 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (507,'과거','당신이 상처 준 사람이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (508,'과거','당신이 위로가 돼 준 사람이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (509,'과거','지나온 삶을 되돌아 봤을 때, 잘 살아온 것 같나요?');
 
 INSERT INTO communication(id, category, question) VALUES (601,'미래','당신이 미래에 가장 하고 싶은 것은 무엇인가요?');
 INSERT INTO communication(id, category, question) VALUES (602,'미래','당신은 미래에 어떤 삶을 살고 싶나요?');
-INSERT INTO communication(id, category, question) VALUES (603,'미래','당신은 주변인에게 어떤 사람으로 보이고 싶나요?');
+INSERT INTO communication(id, category, question) VALUES (603,'미래','10년 후의 나는 어떤 삶을 살고 있을 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (604,'미래','어떤 것이 나를 더 행복하게 만들어 줄 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (605,'미래','당신은 미래에 어떤 일을 하며 살고 있을 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (606,'미래','당신에게 인생의 전성기가 온다면, 언제 일 것 같나요?');
+INSERT INTO communication(id, category, question) VALUES (607,'미래','당신의 마지막 순간에 누가 함께 있길 바라나요?');
+INSERT INTO communication(id, category, question) VALUES (608,'미래','당신이 해보고 싶은 취미는 무엇인가요?');
+INSERT INTO communication(id, category, question) VALUES (609,'미래','미래에 개발됐으면 하는 제품/서비스가 있나요?');
+
 
 INSERT INTO communication(id, category, question) VALUES (701,'관계','당신은 다른 사람에게 어떤 사람이고 싶나요?');
 INSERT INTO communication(id, category, question) VALUES (702,'관계','당신이 소중하게 여기는 관계는 어떤 관계인가요?');
 INSERT INTO communication(id, category, question) VALUES (703,'관계','당신이 관계를 맺기 위해 하는 노력이 있나요?');
+INSERT INTO communication(id, category, question) VALUES (704,'관계','당신이 친해지는 사람들의 공통점이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (705,'관계','당신의 가장 친한 친구에 대해 자랑해주세요!');
+INSERT INTO communication(id, category, question) VALUES (706,'관계','당신은 주로 갈등상황이 발생하면 어떻게 푸나요?');
+INSERT INTO communication(id, category, question) VALUES (707,'관계','가까웠지만 완전히 끝을 낸 관계가 있나요?');
+INSERT INTO communication(id, category, question) VALUES (708,'관계','당신이 피하는 관계가 있다면 어떤 이유인가요?');
+INSERT INTO communication(id, category, question) VALUES (709,'관계','당신과 친해지기 위해서 해야 할 노력이 있다면?');
+INSERT INTO communication(id, category, question) VALUES (710,'관계','연인관계에서 가장 많이 보는 것은?');
+INSERT INTO communication(id, category, question) VALUES (711,'관계','당신과 관계 유지를 위해 어떤 것이 필요할까요?');
+
+
+
+
+
+
+
 
 
 
